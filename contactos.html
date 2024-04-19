@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head> <!-- Etiquetas Informativas-->
+      <meta charset="UTF-8">
+      <title>Contacto - Barberia Alura</title>
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="images/logo.png" alt=""></h1> <!--Colocando imagen de encabezado-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+        </nav>
+
+      </div>
+    </header>  
+    <main>
+    <form>
+          <label for="NombreApellido" >Nombre y apellido</label>
+          <input class="inputPadron" type="text" id="nombreApellido" required
+          placeholder="Juanito Alimaña">
+
+          <label for="carreo">Correo Electronico</label>
+          <input class="inputPadron" type="email" id="correo" required 
+          placeholder="ejemplo@dominio.com">
+
+          <label for="telefono">Telefono</label>
+          <input class="inputPadron" type="tel" id="telefono" required
+          placeholder="(XX) XXXX XXXX">
+
+          <label for="mensaje">Mensaje</label>
+          <textarea class="inputPadron" name="Mensaje" id="mensaje" cols="68" rows="10" placeholder="(Opcional)"></textarea>
+          
+          <div>
+            <fieldset>
+              <legend id="test">¿Como le gustaria que lo contactaramos? </legend>
+              <label for="radioEmail">
+                <input class="" type="radio" name="contacto" value="email" id="radioEmail">Email</label>
+              
+              <label for="radioTelefono">
+                <input type="radio" name="contacto" value="telefono" id="radioTelefono">Telefono</label>
+              
+              <label for="radioWA">
+                <input type="radio" name="contacto" value="WA" id="radioWA" checked>WhatsApp</label>
+            </fieldset>
+           
+          </div>
+
+          <div>
+           <fieldset>
+            <legend id="test">¿Como le gustaria que lo contactaramos? </legend>
+            <label for="radioEmail">
+              <input class="" type="radio" name="contacto" value="email" id="radioEmail">Email</label>
+            
+            <label for="radioTelefono">
+              <input type="radio" name="contacto" value="telefono" id="radioTelefono">Telefono</label>
+            
+            <label for="radioWA">
+              <input type="radio" name="contacto" value="WA" id="radioWA" checked>WhatsApp</label>
+           </fieldset>
+
+          </div>
+          <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades?</label>
+            
+
+
+          <input type="submit" value="Enviar Formulario" class="enviar"> <!--Boton para enviar -->
+      </form>
+
+      <table>
+        <thead>
+          <th>Dia</th>
+          <th>Horario</th>
+        </thead>
+
+       <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>8am-8pm</td>
+        </tr>
+        <tr>
+          <td>Miercoles</td>
+          <td>8am-8pm</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>8am-8pm</td>
+        </tr>
+       </tbody>
+
+      </table>
+
+    </main>
+    <footer>
+
+          <img src="images/logo-blanco.png">
+          <p class="copyrigth">&copy; Copyrigth Baberia Alura - 2020 </p>
+    
+        </footer>  
+  
+  </body>
+
+</html>
